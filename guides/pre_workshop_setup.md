@@ -37,9 +37,7 @@ In **VSCode**, go to the Extensions Marketplace, search for the Go plugin and in
 Also install the necessary Go tools that comes with it.
 Open the Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS), type *"Go: Install/Update Tools"* and press `Enter`.
 
-<div style="page-break-after: always;"></div>
-
-### Step 7: PostgreSQL 🐘
+### Step 5: PostgreSQL 🐘
 1. Go to [postgresql.org/download/](https://www.postgresql.org/download/) & follow the installation instructions for your operating system.
    - On Windows, you will need to set the port. It’s normally 5432.
    - You might need to setup PgAdmin.
@@ -85,8 +83,6 @@ To test if everything is working correctly, create a project.
    ```
    go run main.go
    ```
-
-<div style="page-break-after: always;"></div>
 
 5. Test your db connection with the following code.
    First, install the pq driver: `go get github.com/lib/pq`.
