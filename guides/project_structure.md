@@ -1,4 +1,3 @@
-
 # Structuring Go Projects 🏗️
 
 This document outlines some best practices for structuring GoLang projects, focusing on APIs.
