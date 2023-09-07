@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"log"
+	"os"
 )
 
 // 1) TODO: Fill out the personal_data.json file in the data directory
@@ -30,7 +30,7 @@ func main() {
 
 func handleData() Portfolio {
 	// Read the data from the JSON file
-	file, err := ioutil.ReadFile("static/data/personal_data.json")
+	file, err := os.ReadFile("static/data/personal_data.json")
 	if err != nil {
 		log.Fatal("Failed to read personal_data.json:", err)
 	}
