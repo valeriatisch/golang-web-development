@@ -4,6 +4,6 @@ package api
 
 // Create client
 
-// Create eser struct
+// Create user struct
 
 // Fetch eser & decode into user struct
