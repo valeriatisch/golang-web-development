@@ -1,0 +1,8 @@
+go 1.20
+
+use (
+	./02_fetch_data_write_db
+	./03_api
+	./exercises/02_fetch_data/solution
+	./exercises/03_api/solution
+)
