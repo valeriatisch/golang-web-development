@@ -7,9 +7,9 @@
 </head>
 
 <body>
-	
-	<h3> Hello,  </h3>
-	<p> Hello, again  </p>
+	{{ $name := . }}
+	<h3> Hello, {{ $name }}  </h3>
+	<p> Hello, again {{ $name -}}{{ $name }}  </p>
 </body>
 
 </html>

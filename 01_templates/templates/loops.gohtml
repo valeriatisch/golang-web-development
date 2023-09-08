@@ -9,15 +9,15 @@
 <body>
     <h3> People </h3>
     <ul>
-
-        <li>  is years  old </li>
-
+        {{ range .People }}
+        <li> {{ .Name }} is {{ .Age }} years old </li>
+        {{ end }}
     </ul>
     <h3> Books </h3>
     <ul>
-
-        <li>  </li>
-
+        {{ range .Books }}
+        <li> {{ .Title }} </li>
+        {{ end }}
     </ul>
 </body>
 
