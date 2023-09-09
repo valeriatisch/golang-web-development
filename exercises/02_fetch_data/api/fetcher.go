@@ -7,7 +7,7 @@ import (
 	// "time"
 )
 
-// 1) TODO: Set the API URL
+// 1) TODO: Set the API URL: https://www.boredapi.com/api/activity
 
 // 2) TODO: Create a custom client with a timeout of 30 seconds
 
