@@ -29,8 +29,18 @@ func GetAllUsers(db *sql.DB, firstName string) ([]types.User, error) {
 	var argID int = 1
 
 	// If first_name given, append to query
+	if firstName != "" {
+		query += fmt.Sprintf(" AND first_name = $%d", argID)
+		args = append(args, firstName)
+		argID++
+	}
 	
 	// Query DB
+	rows, err := db.Query(query, args...)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
 
 	// Scan each result into struct & append to slice
 	var users []types.User
