@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>All Activities</title>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h1 class="mb-4">Activities</h1>
+    <ul class="list-group">
+        {{range .}}
+        <li class="list-group-item"><a href="/activity/{{.ID}}">{{.ActivityName}}</a></li>
+        {{end}}
+    </ul>
+    <h4 class="mt-5"><a href="/create-activity">Create your own activity</a></h3>
+</div>
+
+</body>
+</html>

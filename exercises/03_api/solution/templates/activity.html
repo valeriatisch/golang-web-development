@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Activity Detail</title>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h1 class="mb-4">{{.ActivityName}}</h1>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text"><strong>Type:</strong> {{.Type}}</p>
+            <p class="card-text"><strong>Participants:</strong> {{.Participants}}</p>
+            <p class="card-text"><strong>Price:</strong> ${{.Price}}</p>
+            <p class="card-text"><strong>Link:</strong> <a href="{{.Link}}">{{.Link}}</a></p>
+            <p class="card-text"><strong>Accessibility:</strong> {{.Accessibility}}</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
