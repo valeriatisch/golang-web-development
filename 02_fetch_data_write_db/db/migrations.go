@@ -21,6 +21,12 @@ func EnsureTableExists(conn *sql.DB) error {
 
 // Insert User into table
 func InsertUser(conn *sql.DB, user *api.User) error {
-	
-	return nil
+	_, err := conn.Exec(`
+	INSERT INTO users (first_name, last_name)
+	VALUES ($1, $2)
+	`,
+		user.FirstName,
+		user.LastName,)
+
+	return err
 }
